@@ -20448,7 +20448,7 @@ html.hide-aside .layout > div:first-child {
   height: 110px;
 }
 [data-theme="dark"] #aside-content .card-widget#card-wechat {
-  background-color: #121121;
+  background-color: #6495ED;
   border: var(--style-border);
 }
 
