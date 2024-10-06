@@ -20438,7 +20438,7 @@ html.hide-aside .layout > div:first-child {
 }
 
 #aside-content .card-widget#card-wechat {
-  background: #57bd6a;
+  background: #6495ED;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -20448,7 +20448,7 @@ html.hide-aside .layout > div:first-child {
   height: 110px;
 }
 [data-theme="dark"] #aside-content .card-widget#card-wechat {
-  background-color: #6495ED;
+  background-color: #121121;
   border: var(--style-border);
 }
 
