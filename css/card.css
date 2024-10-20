@@ -1,0 +1,102 @@
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #fff; /* Border added */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow */
+    max-width: 500px; /* Limit card width */
+    margin: 0; /* Center card */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    position: relative; /* 使得头像可以相对定位 */
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.status {
+    display: inline-block; /* 确保宽度跟随文本 */
+    font-weight: bold;
+    padding: 5px 10px; /* 控制内边距 */
+    border-radius: 15px; /* 圆角效果 */
+    color: white; /* 字体颜色 */
+    margin-bottom: 5px;
+}
+
+.status-in-progress {
+    background-color: #f1c40f; /* Yellow */
+}
+
+.status-completed {
+    background-color: #2ecc71; /* Green */
+}
+
+.status-not-started {
+    background-color: #e74c3c; /* Red */
+}
+
+.status-fill {
+    background-color: #f1c40f; /* 状态填充颜色 */
+    border-radius: 10px; /* 圆角 */
+    height: 4px; /* 填充高度 */
+    margin-right: 5px; /* 间距 */
+    width: 60px; /* 固定宽度，可以根据需要调整 */
+}
+
+
+.project-name {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    height: 10px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.progress {
+    background-color: #1AAD19;
+    height: 100%;
+}
+
+.progress-number {
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-align: right;
+    font-weight: bold;
+    color: #4a8ac6;
+}
+
+.start-date {
+    font-size: 14px;
+    color: #7f8c8d;
+}
+
+.avatars {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* 左对齐 */
+}
+
+.avatar {
+    width: 40px; /* 头像大小 */
+    height: 40px; /* 头像大小 */
+    border-radius: 0; /* 圆形头像 */
+    margin-left: -10px; /* 头像叠加 */
+    border: 2px solid #fff; /* 可选：白色边框 */
+    cursor: pointer; /* 鼠标悬停时显示手指 */
+}
